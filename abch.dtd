@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<!ELEMENT tabela_kursow (numer_tabeli, data_notowania?, data_publikacji, pozycja+)>
+<!ATTLIST tabela_kursow typ (A|B|C|H) #REQUIRED>
+<!ATTLIST tabela_kursow uid CDATA #IMPLIED>
+<!ELEMENT numer_tabeli (#PCDATA)>
+<!ELEMENT data_notowania (#PCDATA)>
+<!ELEMENT data_publikacji (#PCDATA)>
+<!ELEMENT pozycja (nazwa_kraju?, symbol_waluty?, nazwa_waluty?, przelicznik?, kod_waluty, odnosnik?, kurs_kupna?, kurs_sprzedazy?, kurs_sredni?)>
+<!ELEMENT nazwa_kraju (#PCDATA)>
+<!ELEMENT symbol_waluty (#PCDATA)>
+<!ELEMENT nazwa_waluty (#PCDATA)>
+<!ELEMENT przelicznik (#PCDATA)>
+<!ELEMENT kod_waluty (#PCDATA)>
+<!ELEMENT odnosnik (#PCDATA)>
+<!ELEMENT kurs_sredni (#PCDATA)>
+<!ELEMENT kurs_kupna (#PCDATA)>
+<!ELEMENT kurs_sprzedazy (#PCDATA)>
